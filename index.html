@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="= X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio- devesh</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <div id="header">
+      <div class="container">
+        <nav>
+            <img src="img/logo1.png" alt="logo" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>                
+                <li><a href="#about">About</a></li>                                
+                <li><a href="#portfolio">Project</a></li>                
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>                
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"> </i>
+            
+        </nav>
+        <div class="header-text">
+            <p></p>
+            <h1>Hi, I'm <span>Devesh B</span><br> From INDIA, Chennai</h1>
+        </div>
+      </div>  
+    </div>
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="img/profile.png" alt="profile">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a dedicated and quick-learning Computer Science Engineer with excellent communication and teamwork skills. I thrive in fast-paced environments, staying ahead of emerging technologies to contribute effectively. My collaborative mindset and strong problem-solving abilities enable seamless teamwork and achievement of shared objectives. </p>
+                <div class="tab-titles">
+                    <p class= "tab-links active-link"onclick="opentab('skills')">Skills</p>
+                    <p class= "tab-links" onclick="opentab('education')">Education</p>
+                    <p class= "tab-links" onclick="opentab('projects')">projects </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        
+                        <li><span>Web development</span><br>HTML,CSS,JAVASCRIPT</li>
+                        <li><span>Machine Learning</span><br>Python(Numby,pandas,Tensor-flow,OpenCV)</li>
+                        <li><span>Database Management System</span><br>MySQL</li>
+                        <li><span>Programming</span><br>C,C++,JAVA,JAVA SCRIPT</li>
+                        <li><span>Data Structure</span><br>Python,C</li>
+                        <li><span>UI/UX</span><br>Using Flutter and ReatJS(started)</li>
+                        <li><span>Operating System</span><br>Windows,Linux</li>
+                        <li><span>Microsoft Office</span><br>Word,Excel,Powerpoint</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2025</span><br>VIT Chennai University</li>
+                        <li><span>Higher Secondary</span><br>Sri RM Jain Vidhyashram</li>
+                        <li><span>High School</span><br>Sri RM Jain Vidhyashram</li>
+                    </ul>
+                </div>  
+                <div class="tab-contents" id="projects">
+                    <ul>
+                        <li><span>Emotion-Detector</span></li>
+                        <li><span>Portfolio-website</span><br>HTML,CSS,JAVASCRIPT</li>
+                        <li><span>Eye_drowsiness-Detection</span></li>
+                        <li><span>ChatBot and URL Shortener</span><br>Python</li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <!-------------------------portfolio------------------------------------------>
+     
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="img/emo.jpg">
+                    <div class="layer">
+                        <h3>Emotion detector ML Project</h3>
+                        <a href="https://github.com/Dev176/Emotion-Detector"><i class="fa-solid fa-arrow-up-right-from-square"></i></a> 
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/store.jpeg">
+                    <div class="layer">
+                        <h3> Online Store - A Store which i started in collage(hostel)</h3>
+                        <a href="http://kdstores.epizy.com/index.html?i=1"><i class="fa-solid fa-arrow-up-right-from-square fa-fade"></i></a> 
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="img/chat.jpg">
+                    <div class="layer">
+                        <h3>Chat bot and url SHORTENER</h3>
+                        <a href="https://github.com/Dev176/CHATBOT-AND-URL-SHORTNER"><i class="fa-solid fa-arrow-up-right-from-square fa-fade"></i></a> 
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Dev176" class="btn">View More</a>
+        </div>
+    </div>
+    <!-------------------------contact------------------------------------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>go4devesh73@gmail.com</p>
+                <p><i class="fas fa-phone-square"></i>+91 8825810697</p>
+                <p><i class="fas fa-location-arrow"></i>Chennai, Tamil Nadu, India</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100095015298023"><i class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com/DEV501843"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/deveshb4/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/devesh-b-754627225/"><i class="fab fa-linkedin-in fa-beat"></i></a>
+                    <a href="https://github.com/Dev176"><i class="fa-brands fa-github"></i></a>
+                    
+                </div>
+                <a href="file/Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name='submit-to-google-sheet'>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+                </span>
+            </div>
+            
+        </div>
+    </div>
+    <div class="Thanks">
+        <p>Thanks for visiting my site <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script> 
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+         
+        function openmenu(){
+            sidemeu.style.right = "0px";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxC07vC1zjoUDyHJPpNrulBgI7N79446o4mHCZqRO46CpRT87fWP0QFd9BU3u_tyqmc/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 5000);
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
